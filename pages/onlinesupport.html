@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Univigation - Reach University with our Routes</title>
+      <!--Link Font Awesome File-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">  
+    <!--Link Bootstrap CSS file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--Link Style.CSS File-->
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <!--Owl Carousel CSS file-->
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+    <!--Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!--Navbar-->
+    <div class="main_menu">
+        <div class="logo">
+            <a href="../index.html"><img id="unilogo" src="../images/unilogo.jpeg" alt=""></a></div>
+         <div class="inner_main_menu">
+            <ul id="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/finduni.html">Find Uni</a></li>
+                <li><a href="../pages/onlinesupport.html">Online Support</a></li>
+                <li><a href="../pages/Testimonial.html">Testmonials</a></li>
+                <li><a href="../pages/contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--OnlIne Support-->
+    <div class="wrapper">
+    <center> 
+  <img src="../images/onlinesupport.png" style="border-radius:50%; width:200px; height: 200px;border:3px solid black; background: whitesmoke; padding: 10px;">
+  </center>
+  <h2>Online Support</h2>
+  <div id="error_message">
+     
+  </div>
+  <form action="" id="myform" onsubmit = "return validate();">
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Topic of Query
+        " id="topic">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Phone" id="phone">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Message" id="message"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+</div>
+     <!--Footer-->
+     <footer>
+        Copyright &copy; Univigation 2020
+        <span>
+            <ul>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-google-plus-square"></i></a>
+            </ul>
+        </span>
+    </footer>
+<script type="text/javascript">
+function validate(){
+  var name = document.getElementById("name").value;
+  var topic = document.getElementById("topic").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 5){
+    text = "Please Enter valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(topic.length < 10){
+    text = "Please Enter Correct Subject";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(phone.length < 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 40){
+    text = "Please Enter More Than 40 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Your Query is Submitted Successfully!! We will you contact within 24 Hours.");
+  return true;
+}
+</script>
+</body>
+</html>
