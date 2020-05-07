@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Concert One', cursive;
+    background: #314755;  /* fallback for old browsers */
+background: -webkit-linear-gradient(45deg, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(45deg, #314755,#26a0da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.inner_main_menu{
+    margin: 0 auto;
+    width: 1170px;
+}
+.inner_main_menu ul{
+    margin: 0;
+    padding: 30px 0 0;
+    list-style: none;
+    text-align: right;
+}
+.inner_main_menu ul li{
+    float: none;
+    display: inline-block;
+}
+.inner_main_menu ul li:nth-child(1){
+    float: left;
+}
+.inner_main_menu ul li:nth-child(2){
+    float: left;
+}
+.inner_main_menu ul li:nth-child(3){
+    float: left;
+}
+.inner_main_menu ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+.inner_main_menu ul li a:hover{
+     background-color: white;
+     color: #26a4c7;
+     border-radius: 20px;
+}
+.main_menu{
+    width: 100%;
+    height: 120px;
+    box-shadow: 0 5px 15px #0a569e;
+    position: relative;
+    background-color:#101010;
+}
+.logo{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -80px;
+}
+#unilogo{
+    margin-top: 30px;
+    border-radius: 50%; 
+    border: 5px solid #0a569e ;
+    width: 130px; 
+    height:130px;
+    transition: 1s;
+}
+#unilogo:hover{
+    transform: scale(1.3);
+}
+/* About Section */
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-area{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text{
+    text-transform: capitalize;
+	font-size: 46px;
+	color:rgb(255, 255, 255);
+	font-family: 'Pacifico',cursive;
+	text-shadow: 0px 15px 12px #000;
+}
+.line{
+	width:150px;
+	height: 8px;
+	background-color: #232423;
+	display: block;
+	position: relative;
+	border-radius: 5px;
+	left:30%;
+	box-shadow: 0px 5px 4px 3px grey;
+}
+.content{
+    border-radius: 20px;
+    margin-top: 20px;
+	width:100%;
+	height:auto;
+	background-color: whitesmoke;
+	font-size: 23px;
+	font-family: audiowide;
+	color:#0a569e;
+	line-height: 30px;
+	text-align: center;
+    padding: 20px;
+}
+.heading{
+    text-transform: capitalize;
+    color:  #edb721;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Concert One', cursive;
+}
+footer{
+    float: left;
+    padding: 10px;
+    margin-top: 50px;
+    width:100%;
+	height: auto;
+	background-color: rgb(8, 7, 8);
+	color:#0a569e;
+	font-size: 16px;
+	text-align: left;
+	line-height: 30px;
+}
+span>ul{
+    float: right;
+}
+span>ul a{
+    padding: 0 10px;
+    text-decoration: none;
+    color:  #075196;
+}
+
+span>ul a:hover{
+    background-color: #0a569e;
+    color: aliceblue;
+    border-radius: 20px;
+}
+/*Home Page*/
+.banner{
+  background: #000 url('../images/homebg.jpg');
+  background-size: cover;
+  color: whitesmoke;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  opacity: .5;
+  position: absolute;
+}
+.banner>h1 {
+  font-family: 'Pacifico' ,cursive;
+  font-weight: bolder;
+  font-size: 60px;
+  z-index: 1;
+  text-shadow: 0 5px 15px #0a569e;
+}
+.banner>h2 {
+  font-family: 'Pacifico' ,cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  z-index: 1;
+  text-shadow: 0 3px 6px #0a569e;
+}
+.visionarea{
+    width: 100%;
+    height: auto;
+}
+.flip-card {
+  margin: 20px;
+  background-color: transparent;
+  width: 1300px;
+  height: 300px;
+  perspective: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 20px;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: #2980b9;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+.flip-card-back>h1 {
+    margin-top: 15%;
+    text-decoration: underline black;
+    font-size: 40px;
+    font-family: 'Pacifico',cursive;
+}
+.flip-card-back>p{
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Testimonial Section */
+.testimonials{
+    padding:40px 0;
+    margin-top: 50px;
+    background:aliceblue;
+    color: rgb(24, 23, 23) ;
+    text-align: center;
+    border-radius: 30px;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.border{
+    width: 160px;
+    height: 5px;
+    background:#0a569e;
+    margin: 26px auto;
+}
+.row{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+}
+.cols{
+    flex: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.testimonial{
+    background:aliceblue;
+    padding:30px;
+}
+.testimonial img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.name{
+    font-size: 28px;
+    text-transform: capitalize;
+    margin: 20px 0;
+    font-family: 'Pacifico',cursive;
+}
+.stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+/*University Pages */
+.uniarea{
+    height: auto;
+    width: 100%;
+}
+.uninameandimg{
+    height: 500px;
+    width: 100%;
+}
+#uniname{ 
+  position: absolute;
+  margin-top: -99px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+
+}
+.aboutuni{
+    width: 100%;
+    margin-top: 149px;
+}
+.abouthead{
+    padding: 20px;
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.aboutdetails{
+    margin: 20px;
+    font-size: 18px;
+    padding: 30px;
+    font-family: sans-serif;
+    background-color: white;
+    border-radius: 15px;
+}
+.navigationofuni{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+iframe{
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+.sociallinks{
+    font-family: serif;
+}
+.sociallinks>li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+}
+.sociallinks li a{
+    color: dodgerblue;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.sociallinks li a:hover{
+     color: black;
+}     
+.aboutuol,.aboutkemu{
+    width: 100%;
+    margin-top: 380px;
+} 
+.aboutuet{
+    width: 100%;
+    margin-top: 400px;
+}
+.aboutlums{
+    width: 100%;
+    margin-top: 160px;
+}
+.aboutnust,.aboutqau{
+    width: 100%;
+    margin-top: 360px;
+}  
+.aboutcomsats{
+    width: 100%;
+    margin-top: 90px;
+} 
+.aboutuaf{
+    width: 100%;
+    margin-top: 155px;
+}
+.aboutuopeshawar{
+    width: 100%;
+    margin-top: 290px;
+}
+.aboutgiki{
+    width: 100%;
+    margin-top: 140px;
+}
+.aboutustb{
+    width: 100%;
+    margin-top: 335px;
+}
+.abouticp{
+    width: 100%;
+    margin-top: 395px;
+}
+.aboutbkuc{
+    width: 100%;
+    margin-top: 70px;
+}
+.aboutaku{
+    width: 100%;
+    margin-top: 300px;
+}
+.aboutkiet{
+    width: 100%;
+    margin-top: 250px;
+}
+.abouthabib{
+    width: 100%;
+    margin-top: 120px;
+}
+/*find Uni*/
+.finduniarea>h1{
+   text-align: center;
+   font-size: 40px;
+   color: whitesmoke;
+   margin-top: 20px;
+   font-family: 'Pacifico',cursive;
+}
+.unilist ul{
+    list-style: none;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.unilist ul li a{
+    text-decoration: none;
+    color: #edb721;
+   font-family: 'Concert One', cursive;
+}
+/*Online Support*/
+.wrapper{
+  margin-top: 200px; 
+  position: relative;
+  left: 33%;
+  transform: translate(-50px,-50px);
+  max-width: 550px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgb(254,236,164); 
+}
+
+.wrapper h2{
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  color: whitesmoke;
+  font-size: 32px;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Concert One', cursive;
+}
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: max-content;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+/*Contact Page*/
+.contact{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.contactcard{
+    background: rgba(0,0,0,0.6);
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+.contacticon{
+    font-size: 30px;
+    background: rgb(247, 159, 31);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.contactcard:hover .contacticon{
+    background: none;
+    color: rgb(247,159,31);
+    transform: scale(1.6);
+}
+.contactcard p{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.contactcard:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
